@@ -19,4 +19,4 @@ public class SettingsWindow extends JFrame {
         });
 add(btnStart);
     }
-}
+}//
