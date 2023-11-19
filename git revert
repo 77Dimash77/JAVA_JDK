@@ -1,0 +1,30 @@
+[33mcommit db61128d8d2a1db7e09e6ae22cee0829f5d993a0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: affaaa1 d40b673
+Author: Dimash <mwasikzano@gmail.com>
+Date:   Wed Nov 15 17:23:14 2023 +0600
+
+    Merge branch 'main' of https://github.com/77Dimash77/JDK_Lection1
+
+[33mcommit affaaa19e61057da7ff638a703da85f4391bb025[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Dimash <mwasikzano@gmail.com>
+Date:   Wed Nov 15 17:04:42 2023 +0600
+
+    Game ticXO11
+
+[33mcommit bef818683cd64771b298e19a7394f9c70b893312[m
+Author: Dimash <mwasikzano@gmail.com>
+Date:   Wed Nov 15 16:56:40 2023 +0600
+
+    Game ticXO1
+
+[33mcommit d99f8f1f6c5a912d3c35bcca081d32795df8ead7[m
+Author: Dimash <mwasikzano@gmail.com>
+Date:   Wed Nov 15 16:55:07 2023 +0600
+
+    Game ticXO
+
+[33mcommit d40b6738b9287fbe8fe0fca64cb3bac82951110d[m
+Author: Dimash <61666778+77Dimash77@users.noreply.github.com>
+Date:   Wed Nov 15 16:51:29 2023 +0600
+
+    Initial commit
