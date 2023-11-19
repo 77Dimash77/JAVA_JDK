@@ -74,4 +74,4 @@ public class SettingsWindow extends JFrame {
         add(winLengthSlider);
         add(btnStart);
     }
-}
+}//
