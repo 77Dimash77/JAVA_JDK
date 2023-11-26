@@ -1,3 +1,5 @@
+package Game;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -5,41 +7,43 @@ import java.awt.event.ActionListener;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
-public class ServerControlWindow extends JFrame {
+public class ServerControlWindow extends JFrame implements ChatServerListener {
     private boolean isServerWorking = false;
     private JTextArea textArea;
+    private ChatServer server;
+    private JTextArea log;
 
     public ServerControlWindow() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(400, 200);
         setTitle("Server Control");
+        server = new ChatServer(this);
 
         JButton startButton = new JButton("Start Server");
         JButton stopButton = new JButton("Stop Server");
         textArea = new JTextArea(10, 30);
-        JScrollPane scrollPane = new JScrollPane(textArea);
+        JScrollPane scrollPane = new JScrollPane(log);
+
+        log = new JTextArea();
+        add(scrollPane, BorderLayout.CENTER);
+        LogWriter logWriter = new LogWriter(log);
+        server = new ChatServer(logWriter);
+
+
+
 
         startButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (isServerWorking) {
-                    appendToTextArea("Server is already running.");
-                } else {
-                    appendToTextArea("Starting the server...");
-                    isServerWorking = true;
-                }
+                server.start();
+
             }
         });
 
         stopButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!isServerWorking) {
-                    appendToTextArea("Server is not running.");
-                } else {
-                    appendToTextArea("Stopping the server...");
-                    isServerWorking = false;
-                }
+                server.stop();
             }
         });
 
@@ -71,6 +75,11 @@ public class ServerControlWindow extends JFrame {
                 new ServerControlWindow();
             }
         });
+    }
+
+    @Override
+    public void onMessageReceived(String msg) {
+        textArea.append(msg + "\n");
     }
 
     // Custom OutputStream to redirect System.out to JTextArea

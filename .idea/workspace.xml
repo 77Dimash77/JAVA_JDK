@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="259f8362-9289-404e-b9b4-0b937682d853" name="Changes" comment="" />
+    <list default="true" id="259f8362-9289-404e-b9b4-0b937682d853" name="Changes" comment="DZ_SEMINAR_1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Developers/Backender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Developers/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Developers/FrontendDeveloper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Developers/Frontender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Developers/FullstackDeveloper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Developers/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Game/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Game/ChatServerListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Game/LogWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Game/ServerSocketThreadListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Game/SocketThreadListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chat_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ChatClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/ChatClientWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ServerControlWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/ServerControlWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SettingsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/SettingsWindow.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +35,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,9 +71,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Developers.Main">
+    <configuration name="Developers.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Developers.Main" />
+      <module name="JDK_Lection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Developers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="Game.Main" />
       <module name="JDK_Lection" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -55,6 +94,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Developers.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -68,6 +108,25 @@
       <option name="presentableId" value="Default" />
       <updated>1699957320985</updated>
     </task>
+    <task id="LOCAL-00001" summary="DZ_SEMINAR_1">
+      <created>1700415885037</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700415885037</updated>
+    </task>
+    <task id="LOCAL-00002" summary="DZ_SEMINAR_1">
+      <created>1700415913336</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700415913336</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DZ_SEMINAR_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="DZ_SEMINAR_1" />
   </component>
 </project>

@@ -1,3 +1,5 @@
+package Game;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -5,8 +7,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.*;
+import java.net.Socket;
 
-public class ChatClientWindow extends JFrame {
+public class ChatClientWindow extends JFrame implements SocketThreadListener {
     private JTextField loginField;
     private JPasswordField passwordField;
     private JTextField ipField;
@@ -133,4 +136,49 @@ public class ChatClientWindow extends JFrame {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(ChatClientWindow::new);
     }
+
+    @Override
+    public void onSocketStart(Socket s) {
+        // Логика, когда соединение с сервером установлено
+        appendToChatArea("Connected to the server");
+        enableInputFields(true);
+    }
+
+    @Override
+    public void onSocketStop() {
+        // Логика, когда соединение с сервером завершено
+        appendToChatArea("Disconnected from the server");
+        enableInputFields(false);
+    }
+
+    @Override
+    public void onSocketReady(Socket socket) {
+        // Логика, когда клиент готов к обмену данными
+        appendToChatArea("Client is ready for communication");
+    }
+
+    @Override
+    public void onReceiveString(Socket s, String msg) {
+        // Логика, когда получено сообщение от сервера
+        appendToChatArea("Server: " + msg);
+    }
+
+    @Override
+    public void onSocketException(Throwable e) {
+        // Логика, когда происходит исключение в работе с сокетом
+        e.printStackTrace();
+        appendToChatArea("An error occurred: " + e.getMessage());
+    }
+
+    private void appendToChatArea(String message) {
+        // Логика добавления сообщения в область чата
+        chatArea.append(message + "\n");
+    }
+
+    private void enableInputFields(boolean enable) {
+        // Логика включения/выключения полей ввода
+        messageField.setEnabled(enable);
+        sendButton.setEnabled(enable);
+    }
+
 }
